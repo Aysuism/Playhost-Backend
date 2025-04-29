@@ -1,0 +1,24 @@
+meta {
+  name: Slider Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/homepage/slider/67dd7fb7cabb7f3c4e54e44f
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  gameId: 3
+  heading: ucuncu
+  descriptionAze: bu ucuncu hissedir
+  descriptionEng: this is third part
+  price: 33
+  btnUrlAze: link
+  btnUrlEng: link
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Home Footer Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/homepage/homefooter/67dd844355171592b91082f5
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  headingAze: ucuncu
+  headingEng: third
+  descriptionAze: bu ucuncu hissedir
+  descriptionEng: this is third part
+  appStoreBtnUrl: https://www.apple.com/app-store/
+  playStoreBtnUrl: https://play.google.com/store/games
+}

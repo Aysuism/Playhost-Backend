@@ -1,0 +1,22 @@
+meta {
+  name: User Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/user/user/67e9edfb29577162627aee3f
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  name: rrrr
+  surname: eeee
+  avatarUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  email: islam@gmail.com
+  password: 123456789
+  phone: +994555555555
+  role: user
+  active: true
+}

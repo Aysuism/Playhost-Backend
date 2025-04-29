@@ -1,0 +1,19 @@
+meta {
+  name: News Up Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/newspage/newsup/67df5b60d8b290b7fbcbdee0
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: ucuncut
+  spanEng: third
+  headingAze: salam
+  headingEng: hello
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

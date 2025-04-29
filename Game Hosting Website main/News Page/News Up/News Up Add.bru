@@ -1,0 +1,19 @@
+meta {
+  name: News Up Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/newspage/newsup/
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: ikinci
+  spanEng: second
+  headingAze: salam
+  headingEng: hello
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+}

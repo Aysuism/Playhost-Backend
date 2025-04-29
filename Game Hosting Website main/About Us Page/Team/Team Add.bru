@@ -1,0 +1,28 @@
+meta {
+  name: Team Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/aboutuspage/team
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  headingAze: birinci
+  headingEng: first
+  teamId: 2
+  teamImage: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  fullname: Islam Gadirli
+  roleAze: muellim
+  roleEng: teacher
+  socialMedia[twitterBtnUrl]: https://x.com/
+  socialMedia[facebookBtnUrl]: https://www.facebook.com/
+  socialMedia[tikTokBtnUrl]: https://www.tiktok.com/
+  socialMedia[instagramBtnUrl]: https://www.instagram.com/
+  socialMedia[whatsappBtnUrl]: https://www.whatsapp.com/
+}

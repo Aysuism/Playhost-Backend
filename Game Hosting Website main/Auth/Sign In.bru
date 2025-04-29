@@ -1,0 +1,18 @@
+meta {
+  name: Sign In
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/ad/signin
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"islam@gmail.com",
+    "password":"salam123456789"
+  }
+}

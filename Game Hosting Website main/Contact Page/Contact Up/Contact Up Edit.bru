@@ -1,0 +1,19 @@
+meta {
+  name: Contact Up Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/contactpage/contactup/67e0921f93d1b56883e2201a
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+}

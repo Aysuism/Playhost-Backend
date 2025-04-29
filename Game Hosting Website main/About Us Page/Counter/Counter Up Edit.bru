@@ -1,0 +1,27 @@
+meta {
+  name: Counter Up Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/aboutuspage/counter/67e037e885a453491745b3fb
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "headingAze":"ucuncu",
+    "headingEng":"third",
+    "value":3334
+  }
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+}

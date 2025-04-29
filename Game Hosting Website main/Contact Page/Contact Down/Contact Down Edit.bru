@@ -1,0 +1,31 @@
+meta {
+  name: Contact Down Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/contactpage/contactdown/67e08e8493d1b56883e22008
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titleAze":"ikincirrr",
+    "titleEng":"second",
+    "name":"Elmann",
+    "email":"elman02@gmail.com",
+    "phone":"+48 453 229 737",
+    "message":"salamlar",
+    "btnUrl":"yeni"
+  }
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

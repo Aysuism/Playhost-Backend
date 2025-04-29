@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Game Hosting Website main",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

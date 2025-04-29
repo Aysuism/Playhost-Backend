@@ -1,0 +1,34 @@
+meta {
+  name: Category Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/gamecategory/category/67e139e16f514e55aa82996a
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "categoryId":"3",
+    "category":"survival"
+  }
+}
+
+body:multipart-form {
+  spanAze: ikinci
+  spanEng: second
+  headingAze: oyun
+  headingEng: game
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  gameId: 2
+  gameName: Minecraft
+  originalPrice: 100
+  discountIndicator: true
+  discount: 40
+  discountedPrice: 60
+  image: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+  gameBtnUrl: link
+}

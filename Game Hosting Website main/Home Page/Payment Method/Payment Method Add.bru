@@ -1,0 +1,39 @@
+meta {
+  name: Payment Method Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/homepage/paymentmethod
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "spanAze": "birinci",
+      "spanEng": "first",
+      "headingAze": "birinci hisse",
+      "headingEng": "first part",
+      "visaBtnUrl": "link",
+      "masterCardBtnUrl": "link",
+      "payPalBtnUrl": "link",
+      "skrilBtnUrl": "link",
+      "jcbBtnUrl": "link",
+      "americanExpressBtnUrl": "link" 
+  }
+}
+
+body:multipart-form {
+  spanAze: birinci
+  spanEng: first
+  headingAze: birinci hisse
+  headingEng: first part
+  visaBtnUrl: https://www.visa.pl/
+  masterCardBtnUrl: https://www.mastercard.pl/pl-pl.html
+  payPalBtnUrl: https://www.paypal.com/pl/home
+  skrilBtnUrl: https://www.skrill.com/pl/
+  jcbBtnUrl: https://www.jcb.com/
+  americanExpressBtnUrl: https://www.americanexpress.com/
+}

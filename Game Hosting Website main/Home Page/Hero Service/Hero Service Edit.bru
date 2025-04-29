@@ -1,0 +1,23 @@
+meta {
+  name: Hero Service Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/homepage/heroservice/67dd831348d29e3cd549075d
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  headingAze: ucuncu
+  headingEng: third
+  iconUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  titleAze: ucuncu hisse
+  titleEng: third hisse
+  descriptionAze: bu ucuncu hissedir
+  descriptionEng: this is third part
+}

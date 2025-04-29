@@ -1,0 +1,27 @@
+meta {
+  name: Counter Up Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/aboutuspage/counter
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "headingAze":"d",
+    "headingEng":"secdond",
+    "value":333
+  }
+}
+
+body:multipart-form {
+  spanAze: ikinci
+  spanEng: second
+  headingAze: ikinci hisse
+  headingEng: second part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+}

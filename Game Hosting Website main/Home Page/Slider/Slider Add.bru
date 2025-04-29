@@ -1,0 +1,24 @@
+meta {
+  name: Slider Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/homepage/slider
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  gameId: 2
+  heading: ikinci
+  descriptionAze: bu ikinci hissedir
+  descriptionEng: this is second part
+  price: 22
+  btnUrlAze: link
+  btnUrlEng: link
+}

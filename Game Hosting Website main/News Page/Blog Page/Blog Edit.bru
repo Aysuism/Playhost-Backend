@@ -1,0 +1,21 @@
+meta {
+  name: Blog Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/newspage/blogpage/67ded76e72dc8bc89d1c6bb9
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  blogId: 3
+  imageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  titleAze: ucuncu
+  titleEng: third
+  descriptionAze: xeber
+  descriptionEng: xeber
+  date: 11.03.2025
+}

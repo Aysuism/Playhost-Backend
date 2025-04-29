@@ -1,0 +1,23 @@
+meta {
+  name: Hero Service Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/homepage/heroservice
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: salam
+  spanEng: hello
+  headingAze: ikinci
+  headingEng: second
+  iconUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+  titleAze: ikinci hisse
+  titleEng: second part
+  descriptionAze: bu ikinci hissedir
+  descriptionEng: this is second part
+}

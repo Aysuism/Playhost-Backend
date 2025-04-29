@@ -1,0 +1,23 @@
+meta {
+  name: Customer Reviews Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/gamespage/gamecustomerreviews
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXNsYW0iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDQzNzYyMTZ9.IOXM_l3GyD0pp3RAXKrURsJyCHXrSrBpzPCAHR5BqSw
+}
+
+body:multipart-form {
+  commentId: 2
+  fullname: Aysu 
+  avatarUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  reyting: 2
+  comment: I don't recommend this game!
+}

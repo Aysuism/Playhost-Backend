@@ -1,0 +1,35 @@
+meta {
+  name: About Us Up Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/aboutuspage/aboutusup/67ef37abb6ebe0c141a35a79
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXNsYW0iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDM3MzA1NDV9.q-4KA2MdjD65hB1oYtC2BgQub1HO5GAQ8ebxrONAUFY
+}
+
+body:json {
+  {
+    "titleAze": "ikinci",
+    "titleEng": "second",
+    "name": "Elmann",
+    "email": "elman02@gmail.com",
+    "phone": "+48 453 229 737",
+    "message": "salamlar",
+    "btnUrl": "yeni"
+  }
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

@@ -1,0 +1,27 @@
+meta {
+  name: News Down Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/newspage/newsdown
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "descriptionAze": "sagol",
+    "descriptionEng": "bye",
+    "socialMedia": {
+      "twitterBtnUrl": "https://x.com",
+      "facebookBtnUrl": "https://www.facebook.com",
+      "tikTokBtnUrl": "https://www.tiktok.com",
+      "instagramBtnUrl": "https://www.instagram.com",
+      "whatsappBtnUrl": "https://www.whatsapp.com"
+    },
+    "tags": ["adventure", "gun"]
+  }
+  
+}

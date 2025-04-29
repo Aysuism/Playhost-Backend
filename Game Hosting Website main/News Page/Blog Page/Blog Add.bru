@@ -1,0 +1,21 @@
+meta {
+  name: Blog Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/newspage/blogpage/
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  blogId: 2
+  imageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  titleAze: ikinci
+  titleEng: second
+  descriptionAze: xeber
+  descriptionEng: news
+  date: 10.02.2025
+}

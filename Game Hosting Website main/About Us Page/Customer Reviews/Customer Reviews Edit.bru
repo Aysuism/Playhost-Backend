@@ -1,0 +1,23 @@
+meta {
+  name: Customer Reviews Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/aboutuspage/customerreviews/67e045e986b62f11fc40d69a
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  commentId: 3
+  reyting: 4
+  comment: sagol
+  fullname: Elman
+  avatarUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

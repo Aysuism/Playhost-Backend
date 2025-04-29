@@ -1,0 +1,49 @@
+meta {
+  name: Games Add
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3333/ad/gamespage/games
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAzeFirst: salam
+  spanEngFirst: hello
+  headingAze: oyun
+  headingEng: game
+  gameId: 3
+  gameName: counter strike
+  originalPrice: 100
+  discountIndicator: true
+  discount: 40
+  discountedPrice: 60
+  gameCategory: 67d0e1a10b8971c4d1f91150
+  imageUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  gameBtnUrl: link
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+  spanAzeSecond: salam2
+  spanEngSecond: hello2
+  rating: 4
+  reviews: 1000
+  slotHeadingAze: slotaze
+  slotHeadingEng: sloteng
+  slotDescriptionAze: slotdesaze
+  slotDescriptionEng: slotdeseng
+  slot: 250
+  durationAze: duraze
+  durationEng: dureng
+  durationDescriptionAze: durdesaze
+  durationDescriptionEng: durdeseng
+  duration: 7
+  locationAze: locaze
+  locationEng: loceng
+  locationDescriptionAze: locdesaze
+  locationDescriptionEng: locdeseng
+  location[country]: Germany
+  location[flagUrl]: link
+  location[isSelected]: true
+}

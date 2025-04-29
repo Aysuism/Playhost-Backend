@@ -1,0 +1,29 @@
+meta {
+  name: Faq Down Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/faqpage/faqdown
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "questionId":"2",
+    "titleAze":"ikinci sual",
+    "titleEng":"second question",
+    "descriptionAze":"sagol",
+    "descriptionEng":"bye"
+  }
+}
+
+body:multipart-form {
+  spanAze: ikinci
+  spanEng: second
+  headingAze: ikinci hisse
+  headingEng: second part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

@@ -1,0 +1,37 @@
+meta {
+  name: News Down Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/newspage/newsdown/67df5a98d8b290b7fbcbdecf
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "descriptionAze": "salamm",
+    "descriptionEng": "helloo",
+    "socialMedia": {
+      "twitterBtnUrl": "https://x.com",
+      "facebookBtnUrl": "https://www.facebook.com",
+      "tikTokBtnUrl": "https://www.tiktok.com",
+      "instagramBtnUrl": "https://www.instagram.com",
+      "whatsappBtnUrl": "https://www.whatsapp.com"
+    },
+    "tags": ["adventure", "gun"]
+  }
+  
+}
+
+body:multipart-form {
+  blogId: 3
+  image: @file(C:\Users\HPC9\Downloads\images.jpeg)
+  titleAze: ucuncu
+  titleEng: third
+  descriptionAze: ucuncu blog
+  descriptionEng: third blog
+  date: 10.03.2025
+}

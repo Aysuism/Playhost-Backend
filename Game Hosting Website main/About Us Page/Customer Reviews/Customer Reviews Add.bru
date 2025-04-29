@@ -1,0 +1,23 @@
+meta {
+  name: Customer Reviews Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/aboutuspage/customerreviews
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: birinci
+  spanEng: first
+  headingAze: basliq
+  headingEng: heading
+  commentId: 2
+  reyting: 5
+  comment: oyun cox yaxsidir
+  fullname: Islam Gadirli
+  avatarUrl: @file(C:\Users\HPC9\Downloads\images.jpeg)
+}

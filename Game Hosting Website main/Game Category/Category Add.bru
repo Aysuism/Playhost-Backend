@@ -1,0 +1,18 @@
+meta {
+  name: Category Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/gamecategory/category
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "categoryId":"3",
+    "category":"Survival"
+  }
+}

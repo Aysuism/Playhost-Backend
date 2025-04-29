@@ -1,0 +1,22 @@
+meta {
+  name: User Add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3333/ad/user/user
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  name: Elman
+  surname: Alakbarzade
+  avatarUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+  email: elman@gmail.com
+  password: salam123456789
+  phone: +994505555555
+  role: user
+  active: true
+}

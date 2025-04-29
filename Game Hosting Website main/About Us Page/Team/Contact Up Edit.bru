@@ -1,0 +1,28 @@
+meta {
+  name: Contact Up Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/aboutuspage/team/67e04b0b300c1fc2b84d47cb
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  teamId: 1
+  teamImage: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+  fullname: Elman Alakbarzade
+  roleAze: muhendis
+  roleEng: engineer
+  socialMedia[twitterBtnUrl]: https://x.com/
+  socialMedia[facebookBtnUrl]: https://facebook.com/
+  socialMedia[tikTokBtnUrl]: https://tiktok.com/
+  socialMedia[instagramBtnUrl]: https://instagram.com/
+  socialMedia[whatsappBtnUrl]: https://whatsapp.com/
+}

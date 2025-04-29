@@ -1,0 +1,29 @@
+meta {
+  name: Faq Down Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/faqpage/faqdown/67e098ce0245cb790df6d0ec
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "questionId":"3",
+    "titleAze":"ucuncu sual",
+    "titleEng":"third question",
+    "descriptionAze":"necesen",
+    "descriptionEng":"how are u"
+  }
+}
+
+body:multipart-form {
+  spanAze: ucuncu
+  spanEng: third
+  headingAze: ucuncu hisse
+  headingEng: third part
+  backgroundImageUrl: @file(C:\Users\HPC9\Downloads\images (1).jpeg)
+}

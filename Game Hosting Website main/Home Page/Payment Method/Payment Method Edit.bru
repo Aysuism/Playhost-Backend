@@ -1,0 +1,26 @@
+meta {
+  name: Payment Method Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/ad/homepage/paymentmethod/67c30e21ac900c3bb30e783b
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "spanAze": "ucuncu",
+      "spanEng": "third",
+      "headingAze": "ucuncu hisse",
+      "headingEng": "third part",
+      "visaBtnUrl": "link",
+      "masterCardBtnUrl": "link",
+      "payPalBtnUrl": "link",
+      "skrilBtnUrl": "link",
+      "jcbBtnUrl": "link",
+      "americanExpressBtnUrl": "link" 
+  }
+}
